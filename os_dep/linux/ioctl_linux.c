@@ -23,6 +23,7 @@
 #include <rtw_mp.h>
 #include <rtw_mp_ioctl.h>
 #include "../../hal/phydm/phydm_precomp.h"
+#include <linux/sched/signal.h>
 
 #if (LINUX_VERSION_CODE < KERNEL_VERSION(2, 6, 27))
 #define  iwe_stream_add_event(a, b, c, d, e)  iwe_stream_add_event(b, c, d, e)
