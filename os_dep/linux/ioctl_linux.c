@@ -12195,10 +12195,10 @@ thread_return lbk_thread(thread_context context)
 	cnt = 0;
 	ok = 0;
 	fail = 0;
-
+/*
 	daemonize("%s", "RTW_LBK_THREAD");
 	allow_signal(SIGTERM);
-
+*/
 	do {
 		if (ploopback->size == 0) {
 			get_random_bytes(&pktsize, 4);
