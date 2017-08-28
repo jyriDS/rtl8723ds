@@ -45,7 +45,6 @@
 	#include <linux/semaphore.h>
 #endif
 #include <linux/sem.h>
-#include <linux/sched.h>
 #include <linux/sched/signal.h>
 #include <linux/etherdevice.h>
 #include <linux/wireless.h>
