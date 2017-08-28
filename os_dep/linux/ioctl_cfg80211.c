@@ -214,7 +214,7 @@ void rtw_5g_rates_init(struct ieee80211_rate *rates)
 }
 
 struct ieee80211_supported_band *rtw_spt_band_alloc(
-	enum NL80211_BAND band
+	enum nl80211_band band
 )
 {
 	struct ieee80211_supported_band *spt_band = NULL;
@@ -6455,7 +6455,7 @@ int rtw_cfg80211_set_mgnt_wpsp2pie(struct net_device *net, char *buf, int len,
 
 }
 #ifdef CONFIG_80211N_HT
-static void rtw_cfg80211_init_ht_capab_ex(_adapter *padapter, struct ieee80211_sta_ht_cap *ht_cap, enum NL80211_BAND band, u8 rf_type)
+static void rtw_cfg80211_init_ht_capab_ex(_adapter *padapter, struct ieee80211_sta_ht_cap *ht_cap, enum nl80211_band band, u8 rf_type)
 {
 	struct registry_priv *pregistrypriv = &padapter->registrypriv;
 	struct mlme_priv	*pmlmepriv = &padapter->mlmepriv;
@@ -6503,7 +6503,7 @@ static void rtw_cfg80211_init_ht_capab_ex(_adapter *padapter, struct ieee80211_s
 	}
 }
 
-static void rtw_cfg80211_init_ht_capab(_adapter *padapter, struct ieee80211_sta_ht_cap *ht_cap, enum NL80211_BAND band, u8 rf_type)
+static void rtw_cfg80211_init_ht_capab(_adapter *padapter, struct ieee80211_sta_ht_cap *ht_cap, enum nl80211_band band, u8 rf_type)
 {
 #define MAX_BIT_RATE_40MHZ_MCS23	450	/* Mbps */
 #define MAX_BIT_RATE_40MHZ_MCS15	300	/* Mbps */
