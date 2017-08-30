@@ -45,7 +45,11 @@
 	#include <linux/semaphore.h>
 #endif
 #include <linux/sem.h>
-#include <linux/sched/signal.h>
+#if (LINUX_VERSION_CODE >= KERNEL_VERSION(4, 11, 0))
+	#include <linux/sched/signal.h>
+#else
+	#include <linux/sched.h>
+#endif
 #include <linux/etherdevice.h>
 #include <linux/wireless.h>
 #include <net/iw_handler.h>
